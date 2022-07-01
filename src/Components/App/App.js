@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Cards from "../Cards/cards.js";
 import Drawer from "@mui/material/Drawer";
-import Basket from "../Basket/basket";
+import Basket from "../Basket/basket.js";
 
 function App() {
   const [data, setData] = useState();
