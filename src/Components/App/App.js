@@ -19,8 +19,18 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Shop!</h1>
-      <Cards/>
+      {data ? data.map((item) => {
+        return (
+         <Cards
+         key={item.id}
+         id={item.id}
+         image={item.image}
+         title={item.title}
+         price={item.price}
+         />
+        )
+      })
+       : null}
     </div>
   );
 }
