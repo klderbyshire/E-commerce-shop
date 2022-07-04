@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3>My Shop!</h3>
+      <h3 className="myshop">My Shop!</h3>
       <Drawer anchor="right" open={cart} onClose={() => setCart(false)}>
         Your Shopping Cart!
         <Basket basket={basket} />
