@@ -47,8 +47,10 @@ function App() {
                 image={item.image}
                 title={item.title}
                 price={item.price}
-                addToBasket={addToBasket}
+               addToBasket={addToBasket}
+              
               />
+              
             );
           })
         : null}
