@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Cards from "../Cards/cards.js";
 import Drawer from "@mui/material/Drawer";
-import Basket from "../Basket/basket";
+import Basket from "../Basket/basket.js";
 
 function App() {
   const [data, setData] = useState();
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3>My Shop!</h3>
+      <h3 className="myshop">My Shop!</h3>
       <Drawer anchor="right" open={cart} onClose={() => setCart(false)}>
         Your Shopping Cart!
         <Basket basket={basket} />
